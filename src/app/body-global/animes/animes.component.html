@@ -1,0 +1,44 @@
+<h1>Animes</h1>
+
+<div class="container">
+  <div class="indica">
+    <h2>Deseja uma indicação? </h2>
+    <div style="display: flex; flex-direction: row; align-items: center;">
+      <p>Clique aqui: &nbsp;</p>
+      <input type="submit" class="btnSubmit" value="Indicação" (click)="indicacaoAnimes()" />
+    </div>
+    <div *ngIf="recommendsAnime" class="anime-itens">
+        <h4>{{recommendsAnime.name}}</h4>
+        <img class="imageDesign" src="assets/animes/{{recommendsAnime.image}}" alt="Poster do anime">
+        <h5>Year: </h5><p>{{recommendsAnime.year}}</p>
+        <h5>Author: </h5><p>{{recommendsAnime.author}}</p>
+        <h5>Genre: </h5><p>{{recommendsAnime.genre}}</p>
+        <h5>Description: </h5><p>{{recommendsAnime.description}}</p>
+        <h5>Rating: </h5><p>{{recommendsAnime.rating}}</p>
+    </div>
+  </div>
+
+  <div class="pesquisa">
+    <h2>Deseja pesquisar um Anime?</h2>
+    <input style="max-width: 400px;" type="text" placeholder="Insira o nome em inglês do anime" id="t"
+      name="t" [(ngModel)]="t">
+    <div style="display: flex; flex-direction: row; align-items: center;">
+      <input type="submit" class="btnSubmit" value="Pesquisar" (click)="pesquisarAnime()" />
+    </div>
+    <div *ngIf="resultAnime" class="anime-itens">
+      <div *ngIf="this.animeExiste; else naoEncontrado">
+        <h4>{{resultAnime.name}}</h4>
+        <img class="imageDesign" src="assets/animes/{{resultAnime.image}}" alt="Poster do anime">
+        <h5>Year: </h5><p>{{resultAnime.year}}</p>
+        <h5>Author: </h5><p>{{resultAnime.author}}</p>
+        <h5>Genre: </h5><p>{{resultAnime.genre}}</p>
+        <h5>Description: </h5><p>{{resultAnime.description}}</p>
+        <h5>Rating: </h5><p>{{resultAnime.rating}}</p>
+      </div>
+      <ng-template #naoEncontrado>
+        <p>Anime não Encontrado!</p>
+      </ng-template>
+    </div>
+  </div>
+
+</div>

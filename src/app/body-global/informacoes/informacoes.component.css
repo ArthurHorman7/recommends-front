@@ -1,0 +1,40 @@
+
+h3, h2, h1 {
+  background-image: linear-gradient(to bottom, #fff, #57BCAF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+p, h4, a{
+  color: #57BCAF;
+  font-weight: 1000;
+  padding: 5px;
+}
+
+
+
+.conteudo-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.whats:hover {
+  font-size: 18px;
+  font: bold;
+  background-image: linear-gradient(to bottom, #013e36, #57BCAF) !important;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.container {
+  color: black;
+  width: 100%;
+  margin-top: 50px;
+  }
+

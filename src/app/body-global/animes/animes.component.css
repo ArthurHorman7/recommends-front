@@ -1,0 +1,72 @@
+h5, h3, h2, h1 {
+  background-image: linear-gradient(to bottom, #fff, #57BCAF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 1000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 5px;
+}
+h3, h2, h1 {
+  text-align: center;
+}
+
+p {
+  color: #013e36;
+  font-weight: 1000;
+  padding: 5px;
+}
+
+h4 {
+  background-image: linear-gradient(to bottom, #fff, #57BCAF);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 2000;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  margin-bottom: 5px;
+}
+
+.container {
+  margin: 100px 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.indica {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.pesquisa {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+input {
+  padding: 10px;
+  border-radius: 10px;
+  border-color: black;
+  color: #57BCAF;
+  background-image: linear-gradient(to bottom, black, #013e36);
+  font-weight: 700;
+  margin: 5px;
+}
+.btnSubmit {
+  cursor: pointer;
+}
+
+.anime-itens {
+  max-width: 300px;
+}
+
+.imageDesign {
+  width: 200px;
+  height: 300px;
+}
