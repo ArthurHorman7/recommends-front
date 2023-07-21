@@ -1,4 +1,5 @@
 <h1>Animes</h1>
+<hr/>
 
 <div class="container">
   <div class="indica">
@@ -20,11 +21,14 @@
 
   <div class="pesquisa">
     <h2>Deseja pesquisar um Anime?</h2>
-    <input style="max-width: 400px;" type="text" placeholder="Insira o nome em inglês do anime" id="t"
-      name="t" [(ngModel)]="t">
-    <div style="display: flex; flex-direction: row; align-items: center;">
-      <input type="submit" class="btnSubmit" value="Pesquisar" (click)="pesquisarAnime()" />
+    <div class="pesquisaInput">
+      <input style="max-width: 400px;" type="text" placeholder="Insira o nome do anime" id="t"
+        name="t" [(ngModel)]="t">
+      <div style="display: flex; flex-direction: row; align-items: center;">
+        <input type="submit" class="btnSubmit" value="Pesquisar" (click)="pesquisarAnime()" />
+      </div>
     </div>
+
     <div *ngIf="resultAnime" class="anime-itens">
       <div *ngIf="this.animeExiste; else naoEncontrado">
         <h4>{{resultAnime.name}}</h4>

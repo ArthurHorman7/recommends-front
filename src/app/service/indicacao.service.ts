@@ -16,10 +16,10 @@ export class IndicacaoService {
   constructor(private http: HttpClient) {}
 
   indicaAnimes(i:string): Observable<Consultar>{
-    return this.http.get<Consultar>(this.consultaUrl  + '/' + i );
+    return this.http.get<Consultar>(this.consultaUrl  + '/id/' + i );
   }
 
   consultarAnimes(t:string): Observable<Consultar>{
-    return this.http.get<Consultar>(this.consultaUrl  + '/' + t );
+    return this.http.get<Consultar>(this.consultaUrl  + '/name/' + t + '.jpg');
   }
 }

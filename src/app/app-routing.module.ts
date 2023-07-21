@@ -8,11 +8,11 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'sobreNos',
     component: SobreNosComponent
   },
   {
-    path: 'animes',
+    path: '',
     component: AnimesComponent
   },
   {
