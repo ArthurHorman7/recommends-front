@@ -20,6 +20,6 @@ export class IndicacaoService {
   }
 
   consultarAnimes(t:string): Observable<Consultar>{
-    return this.http.get<Consultar>(this.consultaUrl  + '/name/' + t + '.jpg');
+    return this.http.get<Consultar>(this.consultaUrl  + '/name/' + t);
   }
 }
